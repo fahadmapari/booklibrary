@@ -1,0 +1,74 @@
+﻿.book-details-section{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%; 
+}
+
+.heads{
+    font-size: 1.4rem;
+    font-weight: 600;
+    opacity: 0.5;
+    display: block;
+}
+
+
+.book-cover-box{
+    width: 20rem;
+    margin: 1rem;
+    position: relative;
+}
+
+.book-cover-box .img{
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.book-details-box {
+    max-width: 50rem;
+    border-left: 2px solid rgba(0,0,0,0.5);
+    padding-left: 0.8rem;
+}
+
+.book-details-item, .book-buy-item {
+    margin: 1rem;
+}
+
+.labels{
+    font-size: 2rem;
+}
+
+.book-buy-box{
+    position: relative;
+}
+
+.buybtn {
+    background: #ffd83b;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    animation: grow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes grow{
+    0%{
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.float-buy{
+    position: sticky;
+    top: 0;
+}
+

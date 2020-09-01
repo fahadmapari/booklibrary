@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="onlinebooklibary.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>OnlineBookLibrary</title>
+    <link href="./frontend/css/style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav>
+            <div class="brand">
+                <h2><a href="/home.aspx">OnlineBookLibrary</a></h2>
+            </div>
+            <div class="nav-links">
+
+                <asp:Panel ID="newuser" runat="server" CssClass="panel-nav">
+                    <div class="nav-link">
+                    <a href="/books.aspx">Books</a>
+                    </div>
+
+                    <div class="nav-link">
+                    <a href="/signup.aspx">Sign up</a>
+                    </div>
+
+                    <div class="nav-link">
+                    <a href="/login.aspx">Login</a>
+                    </div>
+                </asp:Panel>
+                <asp:Panel ID="loggedin" runat="server" CssClass="panel-nav">
+                    <div class="nav-link">
+                        <asp:Label ID="username" runat="server" Text="" CssClass="asp-nav-item"></asp:Label>
+                    </div>
+                    <div class="nav-link">
+                    <a href="/books.aspx">Books</a>
+                    </div>
+                    <div class="nav-link">
+                    <a href="/ownbooks.aspx">My Books</a>
+                    </div>
+                    <div class="nav-link">
+                        <asp:LinkButton ID="logoutbtn" runat="server" CssClass="asp-nav-item" OnClick="logoutbtn_Click">Logout</asp:LinkButton>
+                    </div>
+                </asp:Panel>
+                
+                <asp:Panel ID="admin" runat="server" CssClass="panel-nav">
+                    <div class="nav-link">
+                    <asp:Label ID="adminname" runat="server" Text="" CssClass="asp-nav-item"></asp:Label>
+                    </div>
+                    <div class="nav-link">
+                    <a href="/books.aspx">Books</a>
+                    </div>
+                    <div class="nav-link">
+                    <a href="/bookupload.aspx">Upload Book</a>
+                    </div>
+                    <div class="nav-link">
+                        <asp:LinkButton ID="LinkButton1" runat="server" CssClass="asp-nav-item" OnClick="logoutbtn_Click">Logout</asp:LinkButton>
+                    </div>
+                </asp:Panel>
+                
+                
+                
+                
+                
+            </div>
+        </nav>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

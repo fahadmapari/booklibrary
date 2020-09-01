@@ -1,0 +1,32 @@
+﻿.book-upload-container{
+    display: block;
+    margin: 3rem auto;
+    width: fit-content;
+    background: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid var(--green);
+}
+
+.book-upload-item{
+    margin: 1.2rem;
+}
+
+.uploadInput{
+    width: 20rem;
+}
+
+.uploadFont{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.3rem;
+}
+
+.uploadbtn{
+    width: 100%;
+    padding: 0.8rem;
+    background: var(--green);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
